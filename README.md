@@ -26,7 +26,7 @@ npm run docs:build
 
 该项目配置了GitHub Actions自动部署到GitHub Pages。推送代码到main分支后会自动构建并部署。
 
-网站访问地址：https://你的用户名.github.io/cloud-pharmacy-docs/
+网站访问地址：https://Sukiyous.github.io/cloud-pharmacy-docs/
 
 ## 目录结构
 
