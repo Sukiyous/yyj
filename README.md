@@ -84,4 +84,4 @@ git config --global user.name "user"
 git config --global user.name 193663514@qq.com
 
 crusor:
-git init
+git init# cloud-pharmacy-docs
