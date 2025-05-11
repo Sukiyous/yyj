@@ -1,0 +1,743 @@
+:root {
+  --vp-c-brand: #42b883;
+  --vp-c-brand-light: #42d392;
+  --vp-c-brand-dark: #33a06f;
+  --vp-c-brand-darker: #155f3e;
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #42d392 30%, #47c1ff);
+  --vp-home-hero-image-background-image: linear-gradient(-45deg, #42d392 30%, #47c1ff);
+  --vp-home-hero-image-filter: blur(72px);
+  --custom-gradient-text: linear-gradient(120deg, #42d392 30%, #47c1ff);
+  
+  /* 字体设置 */
+  --vp-font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  --vp-font-family-mono: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+  
+  /* 导航栏颜色 */
+  --vp-nav-height: 64px;
+  --vp-nav-bg-color: rgba(255, 255, 255, 0.95);
+  --vp-nav-screen-bg-color: rgba(255, 255, 255, 0.95);
+  --vp-c-text-1: #273849;
+  --vp-c-text-2: #476582;
+  --vp-c-text-3: #6a8bad;
+  
+  /* 按钮颜色 */
+  --vp-button-brand-border: #42b883;
+  --vp-button-brand-text: white;
+  --vp-button-brand-bg: #42b883;
+  --vp-button-brand-hover-border: #33a06f;
+  --vp-button-brand-hover-text: white;
+  --vp-button-brand-hover-bg: #33a06f;
+  --vp-button-brand-active-border: #155f3e;
+  --vp-button-brand-active-text: white;
+  --vp-button-brand-active-bg: #155f3e;
+  
+  /* 侧边栏宽度 */
+  --vp-sidebar-width: 280px;
+}
+
+/* 深色模式变量 */
+.dark {
+  --vp-c-brand: #3eaf7c;
+  --vp-c-brand-light: #4abf8a;
+  --vp-c-brand-dark: #369d6f;
+  --vp-c-brand-darker: #2d8a60;
+  --vp-custom-block-info-bg: rgba(66, 184, 131, 0.1);
+  --vp-c-text-1: #dddde3;
+  --vp-c-text-2: #c9c9d1;
+  --vp-c-text-3: #9393a0;
+  --custom-gradient-text: linear-gradient(120deg, #4cd9c1 30%, #5ccfff);
+  
+  /* 导航栏颜色 */
+  --vp-nav-bg-color: rgba(26, 26, 33, 0.95);
+  --vp-nav-screen-bg-color: rgba(26, 26, 33, 0.95);
+  
+  /* 按钮颜色 */
+  --vp-button-brand-border: #3eaf7c;
+  --vp-button-brand-text: #0c0c0d;
+  --vp-button-brand-bg: #3eaf7c;
+  --vp-button-brand-hover-border: #4abf8a;
+  --vp-button-brand-hover-text: #0c0c0d;
+  --vp-button-brand-hover-bg: #4abf8a;
+  --vp-button-brand-active-border: #369d6f;
+  --vp-button-brand-active-text: #0c0c0d;
+  --vp-button-brand-active-bg: #369d6f;
+  
+  /* 背景颜色 */
+  --vp-c-bg: #1a1a21;
+  --vp-c-bg-alt: #161618;
+  --vp-c-bg-soft: #202127;
+}
+
+/* 主页中心区域样式 */
+.VPHome {
+  padding-top: 0 !important;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* 主页内容区域样式 */
+.VPHero.VPHomeHero {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+.VPHero.VPHomeHero .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  padding-left: 24px; 
+  padding-right: 24px;
+}
+
+/* 渐进式文字样式 */
+.VPHero.VPHomeHero .name, 
+.gradient-text {
+  background: var(--custom-gradient-text);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 4.5rem !important;
+  line-height: 4.5rem;
+  font-weight: 700;
+  white-space: pre-wrap;
+  letter-spacing: -2px;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+/* 药品管理系统文字样式 */
+.VPHero.VPHomeHero .text {
+  font-size: 3.2rem !important;
+  font-weight: 700;
+  white-space: pre-wrap;
+  color: #273849;
+  line-height: 3.5rem;
+  margin-top: 0.5rem;
+  letter-spacing: -1px;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.VPHero.VPHomeHero .tagline {
+  font-size: 1.25rem !important;
+  font-weight: 500;
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 1rem 0;
+  color: #6a8bad;
+  text-align: center;
+}
+
+/* 首页按钮样式 */
+.VPHero.VPHomeHero .actions {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.VPHero.VPHomeHero .action .VPButton.medium {
+  padding: 0 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 38px;
+}
+
+.VPHero.VPHomeHero .action .VPButton.brand {
+  background-color: var(--vp-c-brand);
+  color: white;
+  border: 1px solid var(--vp-c-brand-dark);
+}
+
+.VPHero.VPHomeHero .action .VPButton.alt {
+  background-color: #f6f6f7;
+  color: #444;
+  border: 1px solid #e0e0e0;
+}
+
+/* 整体布局 */
+.VPContent.is-home .VPHome {
+  padding-top: 0;
+}
+
+/* 隐藏右侧图像 */
+.VPHero.VPHomeHero .image {
+  display: none;
+}
+
+/* 增加特殊渐变色标题 */
+.special-title {
+  font-size: 5rem;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: -2px;
+  display: none; /* 隐藏额外的标题 */
+}
+
+/* 云药家标题需要隐藏 */
+#云药家知识库 {
+  display: none;
+}
+
+/* 导航栏布局调整 */
+.VPNavBar {
+  height: var(--vp-nav-height) !important;
+  padding: 0 !important;
+  background-color: var(--vp-nav-bg-color) !important; 
+}
+
+.VPNavBar .container {
+  height: var(--vp-nav-height) !important;
+  padding: 0 32px !important;
+  max-width: 1376px !important;
+  margin: 0 auto !important;
+  position: relative !important; /* 为绝对定位提供参考 */
+}
+
+/* Logo和标题样式 */
+.VPNavBar.has-sidebar .title {
+  border-bottom: none !important;
+}
+
+.VPNavBarTitle {
+  height: var(--vp-nav-height) !important;
+  margin-right: 12px !important; /* 减少右侧间距，使搜索框更靠近 */
+}
+
+/* 导航菜单调整 - 强制靠右对齐 */
+.VPNavBar .content-body {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  width: 100% !important;
+}
+
+.VPNavBarMenu {
+  height: var(--vp-nav-height) !important;
+  margin-left: auto !important; /* 使用auto使菜单居右 */
+  position: absolute !important; /* 使用绝对定位 */
+  right: 24px !important; /* 右侧固定距离 */
+  top: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.VPNavBar.has-sidebar .VPNavBarMenu {
+  margin-left: auto !important;
+  position: absolute !important;
+  right: 24px !important;
+}
+
+.VPNavBarMenuLink {
+  height: var(--vp-nav-height) !important;
+  line-height: var(--vp-nav-height) !important;
+  font-size: 0.95rem !important;
+  transition: color 0.25s !important;
+  padding: 0 12px !important;
+}
+
+/* 搜索框响应式调整优化 */
+@media (max-width: 960px) {
+  .VPNavBarTitle {
+    margin-right: 8px !important;
+  }
+  
+  .VPNavBarMenu {
+    right: 70px !important; /* 为汉堡菜单留出空间 */
+  }
+  
+  .VPNavBarSearch {
+    width: 150px !important;
+  }
+}
+
+/* 搜索框位置调整 */
+.VPNavBarSearch {
+  position: relative !important;
+  left: auto !important;
+  transform: none !important;
+  width: 200px !important;
+  margin: 0 !important;
+  background: transparent !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  height: var(--vp-nav-height) !important;
+}
+
+.VPNavBar .content {
+  position: relative !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+/* 确保标题和搜索框占据左侧，菜单占据右侧 */
+.VPNavBar.has-sidebar .content {
+  justify-content: space-between !important;
+}
+
+/* 搜索按钮样式调整 */
+.DocSearch-Button {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  border: 1px solid rgba(60, 60, 67, 0.1) !important;
+  border-radius: 6px !important;
+  padding: 0 10px !important;
+  height: 32px !important; /* 稍微调小高度 */
+  width: 100% !important;
+  background: var(--vp-c-bg-soft) !important;
+  transition: all 0.2s ease !important;
+  margin: 0 !important;
+}
+
+.DocSearch-Button:hover {
+  border-color: var(--vp-c-brand) !important;
+  background: var(--vp-c-bg-soft) !important;
+}
+
+.DocSearch-Button-Keys {
+  display: flex !important;
+  align-items: center !important;
+  min-width: auto !important;
+  margin-right: 0 !important;
+}
+
+.DocSearch-Button-Key {
+  align-items: center !important;
+  background: rgba(0, 0, 0, 0.05) !important;
+  border-radius: 3px !important;
+  box-shadow: none !important;
+  color: var(--vp-c-text-2) !important;
+  display: flex !important;
+  height: 18px !important;
+  justify-content: center !important;
+  margin-right: 0 !important;
+  padding: 0 4px !important;
+  font-family: var(--vp-font-family-mono) !important;
+  font-size: 12px !important;
+  border: none !important;
+}
+
+.DocSearch-Button-Placeholder {
+  font-size: 0.9rem !important;
+  font-weight: 400 !important;
+  color: var(--vp-c-text-2) !important;
+  padding-bottom: 0 !important;
+}
+
+.DocSearch-Search-Icon {
+  color: var(--vp-c-text-2) !important;
+  width: 16px !important;
+  height: 16px !important;
+  margin-right: 8px !important;
+}
+
+/* 适配深色模式 */
+.dark .DocSearch-Button {
+  border-color: rgba(82, 82, 89, 0.32) !important;
+  background: rgba(0, 0, 0, 0.2) !important;
+}
+
+.dark .DocSearch-Button:hover {
+  border-color: var(--vp-c-brand) !important;
+}
+
+.dark .DocSearch-Button-Key {
+  background: rgba(255, 255, 255, 0.1) !important;
+  color: rgba(235, 235, 245, 0.6) !important;
+}
+
+/* 响应式适配 */
+@media (max-width: 768px) {
+  .VPNav {
+    height: auto;
+  }
+  
+  .VPNavBarSearch {
+    width: 160px !important;
+    margin-right: 8px !important;
+  }
+  
+  .VPNavBar .content-body {
+    padding: 0 12px;
+  }
+  
+  .VPNavBar .container {
+    padding: 0 12px;
+  }
+  
+  /* 确保标题和搜索框在一行 */
+  .VPNavBarTitle {
+    flex-shrink: 0;
+  }
+  
+  .VPNavBarTitle .title {
+    font-size: 1rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 2.75rem;
+  }
+  
+  .hero-description {
+    font-size: 1.1rem;
+  }
+  
+  .VPHero.VPHomeHero .name, 
+  .gradient-text {
+    font-size: 3.5rem !important;
+    line-height: 3.5rem;
+  }
+  
+  .VPHero.VPHomeHero .text {
+    font-size: 2.5rem !important;
+    line-height: 2.7rem;
+  }
+  
+  .features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  /* 保持菜单居右 */
+  .VPNavBarMenu {
+    display: none !important; /* 在移动端隐藏常规菜单，显示汉堡菜单 */
+  }
+  
+  .VPNavBar .VPNavBarHamburger {
+    display: flex !important;
+    position: absolute !important;
+    right: 24px !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .VPNavBarSearch {
+    display: none !important; /* 在非常小的屏幕上隐藏搜索框 */
+  }
+  
+  .VPNavBar .VPNavBarHamburger {
+    margin-left: auto !important; /* 将汉堡菜单推到右侧 */
+  }
+  
+  .VPNavBarTitle .title {
+    font-size: 0.9rem;
+  }
+  
+  /* 更小屏幕时确保布局不换行 */
+  .VPNavBar .content-body {
+    flex-wrap: nowrap;
+  }
+  
+  .hero-subtitle {
+    font-size: 2rem;
+  }
+  
+  .hero-description {
+    font-size: 1rem;
+  }
+  
+  .hero-actions {
+    flex-direction: column;
+  }
+  
+  .hero-button {
+    width: 100%;
+  }
+  
+  .VPHero.VPHomeHero .name, 
+  .gradient-text {
+    font-size: 2.5rem !important;
+    line-height: 2.7rem;
+  }
+  
+  .VPHero.VPHomeHero .text {
+    font-size: 1.8rem !important;
+    line-height: 2rem;
+  }
+  
+  .VPHero.VPHomeHero .tagline {
+    font-size: 1rem !important;
+  }
+  
+  .features {
+    grid-template-columns: 1fr;
+  }
+  
+  /* 保持菜单居右 */
+  .VPNavBarMenu {
+    margin-left: auto !important;
+  }
+}
+
+/* 自定义滚动条 */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--vp-c-bg-soft);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #555;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #777;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background-color: #111;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background-color: #444;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background-color: #666;
+}
+
+/* 导航栏基础样式 */
+.VPNav {
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(235, 238, 245, 0.3);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  height: var(--vp-nav-height);
+  padding: 0;
+}
+
+.dark .VPNav {
+  background-color: rgba(26, 26, 33, 0.95);
+  border-bottom: 1px solid rgba(82, 82, 89, 0.32);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* 网站标题和Logo样式 */
+.VPNavBarTitle a {
+  display: flex;
+  align-items: center;
+  border: none !important;
+}
+
+.VPNavBarTitle .title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--vp-c-text-1);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.25s;
+}
+
+.VPNavBarTitle:hover .title {
+  color: var(--vp-c-brand);
+}
+
+.VPNavBarTitle .logo {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%; /* 圆形logo */
+  transition: transform 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.VPNavBarTitle:hover .logo {
+  transform: scale(1.1) rotate(5deg);
+}
+
+/* 修复导航菜单链接颜色 */
+.VPNavBarMenuLink {
+  color: var(--vp-c-text-1) !important;
+  opacity: 0.8;
+}
+
+.VPNavBarMenuLink:hover,
+.VPNavBarMenuLink.active {
+  color: var(--vp-c-brand) !important;
+  opacity: 1;
+}
+
+/* 修复移动端样式 */
+@media (max-width: 768px) {
+  .VPNavBar .content-body {
+    padding: 0 !important;
+  }
+  
+  .VPNavBarHamburger {
+    height: var(--vp-nav-height) !important;
+    display: flex;
+    align-items: center;
+  }
+}
+
+/* 侧边栏样式全面修复 */
+.VPSidebar {
+  width: var(--vp-sidebar-width) !important;
+  background-color: var(--vp-c-bg) !important;
+  border-right: 1px solid var(--vp-c-divider) !important;
+  padding: 0 !important;
+  top: var(--vp-nav-height) !important;
+  height: calc(100vh - var(--vp-nav-height)) !important;
+  z-index: 25 !important;
+}
+
+/* 侧边栏导航容器 */
+.VPSidebarNav {
+  padding-top: 24px !important;
+  height: 100% !important;
+  overflow-y: auto !important;
+  scrollbar-width: thin !important;
+  scrollbar-color: var(--vp-c-divider) transparent !important;
+}
+
+/* 清除侧边栏顶部的点点 */
+.VPSidebarNav::before,
+.VPSidebar .group::before,
+.VPSidebar .VPSidebarItem::before {
+  display: none !important;
+  content: none !important;
+}
+
+/* 侧边栏组样式 */
+.VPSidebar .group {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  width: 100% !important;
+}
+
+/* 侧边栏标题样式 */
+.VPSidebarItem.level-0 {
+  padding: 0 24px 12px 24px !important;
+  margin-bottom: 8px !important;
+  border-bottom: none !important;
+}
+
+.VPSidebarItem.level-0 > .text {
+  font-size: 1.05rem !important;
+  font-weight: 600 !important;
+  color: var(--vp-c-text-1) !important;
+  margin-bottom: 6px !important;
+  letter-spacing: 0.4px !important;
+  transition: color 0.25s !important;
+  line-height: 24px !important;
+}
+
+/* 侧边栏链接样式 */
+.VPSidebarItem.level-1 .VPLink {
+  display: block !important;
+  padding: 5px 18px 5px 24px !important;
+  line-height: 28px !important;
+  color: var(--vp-c-text-2) !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  transition: color 0.25s, background-color 0.25s !important;
+  border-left: 2px solid transparent !important;
+  margin: 0 !important;
+  text-decoration: none !important;
+}
+
+.VPSidebarItem.level-1 .VPLink:hover {
+  color: var(--vp-c-brand) !important;
+  background-color: var(--vp-c-bg-soft) !important;
+  text-decoration: none !important;
+}
+
+.VPSidebarItem.level-1 .VPLink.active {
+  color: var(--vp-c-brand) !important;
+  background-color: var(--vp-c-bg-soft) !important;
+  border-left: 2px solid var(--vp-c-brand) !important;
+  font-weight: 500 !important;
+  text-decoration: none !important;
+}
+
+/* 嵌套菜单项样式 */
+.VPSidebarItem.level-2 .VPLink {
+  display: block !important;
+  padding: 4px 16px 4px 40px !important;
+  line-height: 24px !important;
+  color: var(--vp-c-text-2) !important;
+  font-size: 13px !important;
+  transition: color 0.25s !important;
+  border-left: none !important;
+  text-decoration: none !important;
+}
+
+.VPSidebarItem.level-2 .VPLink:hover {
+  color: var(--vp-c-brand) !important;
+  text-decoration: none !important;
+}
+
+.VPSidebarItem.level-2 .VPLink.active {
+  color: var(--vp-c-brand) !important;
+  font-weight: 500 !important;
+  text-decoration: none !important;
+}
+
+/* 侧边栏滚动条自定义 */
+.VPSidebarNav::-webkit-scrollbar {
+  width: 6px !important;
+  height: 6px !important;
+}
+
+.VPSidebarNav::-webkit-scrollbar-track {
+  background: transparent !important;
+}
+
+.VPSidebarNav::-webkit-scrollbar-thumb {
+  background-color: #ddd !important;
+  border-radius: 10px !important;
+  border: 2px solid transparent !important;
+}
+
+.VPSidebarNav::-webkit-scrollbar-thumb:hover {
+  background-color: #ccc !important;
+}
+
+/* 深色模式下的侧边栏 */
+.dark .VPSidebar {
+  background-color: var(--vp-c-bg) !important;
+  border-right: 1px solid rgba(82, 82, 89, 0.32) !important;
+}
+
+.dark .VPSidebarNav::-webkit-scrollbar-thumb {
+  background-color: #666 !important;
+}
+
+.dark .VPSidebarNav::-webkit-scrollbar-thumb:hover {
+  background-color: #888 !important;
+}
+
+.dark .VPSidebarItem.level-1 .VPLink:hover,
+.dark .VPSidebarItem.level-1 .VPLink.active {
+  background-color: rgba(82, 82, 89, 0.15) !important;
+}
+
+/* 修复内容区域和侧边栏关系 */
+.VPContent.has-sidebar {
+  padding-left: var(--vp-sidebar-width) !important;
+}
+
+/* 响应式调整 */
+@media (max-width: 960px) {
+  .VPSidebar {
+    width: 100% !important;
+    padding: 24px 0 !important;
+  }
+} 

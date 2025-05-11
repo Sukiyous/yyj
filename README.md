@@ -35,7 +35,7 @@ npm run docs:preview
 3. 提交您的更改 (`git commit -m 'Add some amazing feature'`)
 4. 推送到分支 (`git push origin feature/amazing-feature`)
 5. 打开Pull Request
-6.
+
 ## 许可证
 
 本项目采用MIT许可证 - 详见LICENSE文件
