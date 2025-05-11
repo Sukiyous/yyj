@@ -37,4 +37,4 @@
 - 后端：高性能API服务
 - 数据库：结构化药品和用户数据存储
 
-访问[快速开始](getting-started)了解如何安装和使用系统，或查看[需求规格](requirements)了解详细的系统规划。 
+访问[快速开始](getting-started.html)了解如何安装和使用系统，或查看[需求规格](requirements.html)了解详细的系统规划。 

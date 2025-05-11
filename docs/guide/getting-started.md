@@ -86,9 +86,9 @@ const submitForm = () => {
 
 ## 后续步骤
 
-- 阅读[用户指南](user-guide)了解更多功能
-- 查看[API文档](../api/)了解系统接口
-- 访问[常见问题](faq)获取帮助
+- 阅读[用户指南](user-guide.html)了解更多功能
+- 查看[API文档](../api/index.html)了解系统接口
+- 访问[常见问题](faq.html)获取帮助
 
 ::: tip 开发环境
 推荐使用Node.js 16+和Vue.js 3进行开发
