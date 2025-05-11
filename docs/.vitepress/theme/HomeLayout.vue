@@ -5,8 +5,8 @@
       <p class="hero-description">易用高效，专业可靠，适用场景丰富的药品管理与医疗信息平台。</p>
       
       <div class="hero-actions">
-        <a href="guide/getting-started" class="hero-button primary">快速上手 →</a>
-        <a href="guide/getting-started#系统安装" class="hero-button secondary">安装</a>
+        <a href="guide/getting-started.html" class="hero-button primary">快速上手 →</a>
+        <a href="guide/getting-started.html#系统安装" class="hero-button secondary">安装</a>
       </div>
     </div>
   </div>
