@@ -118,9 +118,9 @@ html.dark img {
 
 ## 快速导航
 
-- [系统介绍](/cloud-pharmacy-docs/guide/) - 了解云药家系统的核心功能
-- [快速开始](/cloud-pharmacy-docs/guide/getting-started) - 安装和基本使用指南
-- [组件库](/cloud-pharmacy-docs/components/) - 浏览系统提供的所有组件
+- [系统介绍](guide/) - 了解云药家系统的核心功能
+- [快速开始](guide/getting-started) - 安装和基本使用指南
+- [组件库](components/) - 浏览系统提供的所有组件
 
 ::: tip 提示
 这是一个正在建设中的知识库，内容会持续更新。
