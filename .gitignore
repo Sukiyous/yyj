@@ -10,6 +10,7 @@ node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
 
 # 编辑器目录和文件
 .idea/
@@ -22,4 +23,9 @@ yarn-error.log*
 
 # 系统文件
 .DS_Store
-Thumbs.db 
+Thumbs.db
+
+# 环境变量文件
+.env
+.env.local
+.env.*.local 
