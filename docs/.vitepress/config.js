@@ -38,11 +38,49 @@ export default {
           ]
         },
         {
-          text: '基础',
+          text: '基础档案',
           items: [
-            { text: '药品管理', link: '/guide/medicine-management' },
-            { text: '处方管理', link: '/guide/prescription-management' },
-            { text: '用户管理', link: '/guide/user-management' }
+            { text: '商品管理', link: '/guide/medicine-management' },
+            { text: '商品入库', link: '/guide/product-stock-in' },
+            { text: '商品调价', link: '/guide/product-price-adjustment' }
+          ]
+        },
+        {
+          text: '库存管理',
+          items: [
+            { text: '库存查询', link: '/guide/inventory-query' },
+            { text: '库存盘点', link: '/guide/inventory-check' },
+            { text: '库存预警', link: '/guide/inventory-alert' }
+          ]
+        },
+        {
+          text: '医保对账',
+          items: [
+            { text: '医保结算', link: '/guide/medical-insurance-settlement' },
+            { text: '对账管理', link: '/guide/reconciliation-management' }
+          ]
+        },
+        {
+          text: '医保清算',
+          items: [
+            { text: '医保清算流程', link: '/guide/insurance-clearing-process' },
+            { text: '清算报表', link: '/guide/clearing-reports' }
+          ]
+        },
+        {
+          text: '综合查询',
+          items: [
+            { text: '销售分析', link: '/guide/sales-analysis' },
+            { text: '处方查询', link: '/guide/prescription-query' },
+            { text: '统计报表', link: '/guide/statistical-reports' }
+          ]
+        },
+        {
+          text: '设置中心',
+          items: [
+            { text: '用户管理', link: '/guide/user-management' },
+            { text: '角色权限', link: '/guide/role-permissions' },
+            { text: '系统参数', link: '/guide/system-parameters' }
           ]
         }
       ],
