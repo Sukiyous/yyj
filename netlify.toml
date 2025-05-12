@@ -1,7 +1,7 @@
 # 处理SPA前端路由
 [[redirects]]
   from = "/*"
-  to = "/cloud-pharmacy-docs/index.html"
+  to = "/index.html"
   status = 200
   force = false
   conditions = {Role = ["anonymous"]} 

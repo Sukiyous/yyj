@@ -11,7 +11,7 @@ on:
 
 # 设置 GITHUB_TOKEN 的权限，以允许部署到 GitHub Pages
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -39,9 +39,14 @@ jobs:
       - name: Build
         run: npm run docs:build
       - name: List dist directory
-        run: ls -la docs/.vitepress/dist
+        run: |
+          echo "检查dist目录内容:"
+          ls -la docs/.vitepress/dist || echo "dist目录不存在!"
+          echo "检查config文件:"
+          cat docs/.vitepress/config.js
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: docs/.vitepress/dist 
+          publish_dir: docs/.vitepress/dist
+          force_orphan: true 
