@@ -1,7 +1,7 @@
 export default {
   title: "云药家知识库",
   description: "云药家系统完整知识库，包含文档、教程和API参考",
-  base: '/cloud-pharmacy-docs/',
+  base: '/yyj/',
   ignoreDeadLinks: true,
   head: [
     ['link', { rel: 'icon', href: '/logo-modern.svg' }]
