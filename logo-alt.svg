@@ -1,0 +1,27 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景圆形 -->
+  <circle cx="64" cy="64" r="60" fill="url(#paint0_radial)"/>
+  
+  <!-- 中间药瓶形状 -->
+  <path d="M50 32C50 28.6863 52.6863 26 56 26H72C75.3137 26 78 28.6863 78 32V42H50V32Z" fill="white" fill-opacity="0.9"/>
+  <path d="M50 42H78V90C78 95.5228 73.5228 100 68 100H60C54.4772 100 50 95.5228 50 90V42Z" fill="white" fill-opacity="0.85"/>
+  
+  <!-- 药瓶颈部线条 -->
+  <path d="M50 42H78" stroke="#32A676" stroke-width="3"/>
+  
+  <!-- 药丸和气泡 -->
+  <circle cx="64" cy="60" r="8" fill="#42B883"/>
+  <circle cx="70" cy="76" r="6" fill="#47C1FF"/>
+  <circle cx="58" cy="76" r="6" fill="#42D392"/>
+  
+  <!-- 云字 - 简化设计 -->
+  <path d="M64 35C64 35 60 30 55 33C55 33 50 31 49 36C49 36 45 36 45 40C45 44 49 44 49 44H79C79 44 83 44 83 40C83 36 79 36 79 36C79 36 78 31 73 33C73 33 69 30 64 35Z" fill="#42B883" fill-opacity="0.2" stroke="#42B883" stroke-width="1.5"/>
+  
+  <!-- 渐变定义 -->
+  <defs>
+    <radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(64 40) rotate(90) scale(84)">
+      <stop offset="0" stop-color="#42D392"/>
+      <stop offset="1" stop-color="#47C1FF"/>
+    </radialGradient>
+  </defs>
+</svg> 

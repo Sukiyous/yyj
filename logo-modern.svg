@@ -1,0 +1,28 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 底层圆形 - 渐变背景 -->
+  <circle cx="64" cy="64" r="60" fill="url(#grad1)" />
+  
+  <!-- 叶子形状 - 象征医疗和自然 -->
+  <path d="M64 24C64 24 84 44 84 64C84 84 64 104 44 84C24 64 44 44 64 24Z" fill="#FFFFFF" fill-opacity="0.9" />
+  
+  <!-- 十字形 - 医药标志 -->
+  <path d="M64 54L64 74" stroke="#42B883" stroke-width="6" stroke-linecap="round" />
+  <path d="M54 64L74 64" stroke="#42B883" stroke-width="6" stroke-linecap="round" />
+  
+  <!-- 圆弧 - 象征"云" -->
+  <path d="M43 60C43 48.9543 51.9543 40 63 40C74.0457 40 83 48.9543 83 60" stroke="white" stroke-width="3" stroke-linecap="round" />
+  <path d="M85 58C90.5228 58 95 62.4772 95 68C95 73.5228 90.5228 78 85 78H42C36.4772 78 32 73.5228 32 68C32 62.4772 36.4772 58 42 58" stroke="white" stroke-width="3" stroke-linecap="round" />
+  
+  <!-- 小圆点装饰 -->
+  <circle cx="44" cy="76" r="3" fill="white" />
+  <circle cx="84" cy="76" r="3" fill="white" />
+  <circle cx="64" cy="88" r="4" fill="white" fill-opacity="0.7" />
+  
+  <!-- 渐变定义 -->
+  <defs>
+    <linearGradient id="grad1" x1="20" y1="20" x2="108" y2="108" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#42D392" />
+      <stop offset="1" stop-color="#47C1FF" />
+    </linearGradient>
+  </defs>
+</svg> 
