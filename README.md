@@ -73,6 +73,17 @@ cloud-pharmacy-docs/
 
 部署配置文件：`.github/workflows/deploy.yml`
 
+### 避免常见的链接问题
+
+在VitePress中使用GitHub Pages部署时，请注意以下几点：
+
+1. **基础路径配置**：确保在`.vitepress/config.js`中设置正确的`base`选项，例如：`base: '/cloud-pharmacy-docs/'`
+2. **链接格式**：
+   - 在Vue组件中使用绝对路径（包含基础路径前缀），例如：`/cloud-pharmacy-docs/guide/getting-started.html`
+   - 在Markdown文件中链接其他页面时，可以使用相对路径（如`getting-started.html`）或绝对路径
+3. **链接后缀**：所有页面链接都应包含`.html`后缀
+4. **404错误排查**：如果遇到404错误，检查链接是否包含了正确的基础路径前缀
+
 ## 🤝 贡献指南
 
 我们欢迎社区成员为本项目做出贡献：
