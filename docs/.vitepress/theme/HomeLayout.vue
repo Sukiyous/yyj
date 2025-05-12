@@ -7,6 +7,7 @@
       <div class="hero-actions">
         <a href="/yyj/guide/getting-started.html" class="hero-button primary">快速上手 →</a>
         <a href="/yyj/guide/getting-started.html#系统安装" class="hero-button secondary">安装</a>
+        <a href="/yyj/guide/index.html" class="hero-button test">测试跳转</a>
       </div>
     </div>
   </div>
@@ -109,6 +110,16 @@
   background-color: var(--vp-c-bg-mute, #e6e6e7);
 }
 
+.hero-button.test {
+  background-color: #f59e0b;
+  color: white;
+  border: 1px solid #d97706;
+}
+
+.hero-button.test:hover {
+  background-color: #fbbf24;
+}
+
 :deep(.dark) .hero-button.primary {
   color: #0d0d0d;
   font-weight: 600;
@@ -117,6 +128,12 @@
 :deep(.dark) .hero-button.secondary {
   background-color: transparent;
   border: 1px solid var(--vp-c-brand);
+}
+
+:deep(.dark) .hero-button.test {
+  background-color: #f59e0b;
+  color: #0d0d0d;
+  font-weight: 600;
 }
 
 @media (max-width: 768px) {
