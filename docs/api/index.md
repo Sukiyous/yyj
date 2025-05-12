@@ -55,9 +55,9 @@ POST /auth/token
 
 系统API分为以下几类：
 
-- [药品API](/api/medicine) - 药品信息的增删改查
-- [处方API](/api/prescription) - 处方的创建、审核和管理
-- [用户API](/api/user) - 用户认证和权限管理
+- [药品API](/yyj/api/medicine.html) - 药品信息的增删改查
+- [处方API](/yyj/api/prescription.html) - 处方的创建、审核和管理
+- [用户API](/yyj/api/user.html) - 用户认证和权限管理
 
 ## 速率限制
 

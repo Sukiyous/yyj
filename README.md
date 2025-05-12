@@ -30,8 +30,8 @@
 
 ```bash
 # 克隆仓库
-git clone https://github.com/Sukiyous/cloud-pharmacy-docs.git
-cd cloud-pharmacy-docs
+git clone https://github.com/Sukiyous/yyj.git
+cd yyj
 
 # 安装依赖
 npm install
@@ -49,7 +49,7 @@ npm run docs:preview
 ## 📂 项目结构
 
 ```
-cloud-pharmacy-docs/
+yyj/
 ├── docs/                   # 文档源文件
 │   ├── .vitepress/         # VitePress配置
 │   │   ├── config.js       # 站点配置
@@ -108,7 +108,7 @@ cloud-pharmacy-docs/
 
 如有问题或建议，请通过以下方式联系我们：
 
-- GitHub Issues: [提交问题](https://github.com/Sukiyous/cloud-pharmacy-docs/issues)
+- GitHub Issues: [提交问题](https://github.com/Sukiyous/yyj/issues)
 - Email: 193663514@qq.com
 
 ## 版本管理
@@ -117,4 +117,4 @@ git config --global user.name "user"
 git config --global user.name 193663514@qq.com
 
 crusor:
-git init# cloud-pharmacy-docs
+git init# yyj

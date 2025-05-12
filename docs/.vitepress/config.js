@@ -110,7 +110,7 @@ export default {
       ]
     },
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/your-org/cloud-pharmacy' },
+      { icon: 'github', link: 'https://github.com/Sukiyous/yyj' },
       { icon: 'twitter', link: 'https://twitter.com/cloud-pharmacy' },
       { icon: 'discord', link: 'https://discord.gg/cloud-pharmacy' }
     ],
